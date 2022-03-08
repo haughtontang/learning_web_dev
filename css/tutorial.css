@@ -1,0 +1,100 @@
+/* The properties of css selectors are similar to dictionaries and, where each k:v pair ends with a ;*/
+/*Using the * to apply conditions to everything is caled a 'restet'*/
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+body{
+    /*Colours can be hex, rbg or text*/
+    background-color:darkgray;
+    color:rgb(28, 54, 102);
+
+    /*It loads these in order of availability. Custome fonts can be used, but they must be downloaded and linked to*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*Standard is 16px*/
+    font-size: 18px;
+    font-weight: normal;
+    /* This is the exact same as above but can be done in one declaration
+    font: 18px normal Arial, Helvetica, sans-serif;
+    */
+
+    /*can be px or em*/
+    line-height: 1.6em;
+    margin: 0;
+}
+
+a{
+    text-decoration: None;
+    color: black;
+}
+
+a:hover{
+    color:red;
+}
+
+a:active{
+    color:green
+}
+
+a:visited{
+    color: blueviolet;
+}
+
+.container{
+    /*The width can be pixels but then this does not respond to a window changing sie, therefore its better to use a percentage*/
+    width: 80%;
+    /*puts even amount of spaces between everything*/
+    /*Margins follow the box model in css*/
+    margin: auto;
+}
+
+/*To target a class, use dot(.)*/
+.first_section{
+    background-color: lightblue;
+    color: black;
+    /*Applies to all side but can also be set indiviudally*/
+    border: 5px red solid;
+    border-width: 3px;
+    border-bottom-style: dashed;
+    padding: 25px;
+    margin: 25px;
+}
+
+.first_section h1{
+    font-family: Verdana;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+.second_section{
+    border: 3px dotted darkblue;
+    padding: 25px;
+    margin: 20px 0;
+}
+/*Remember that currently the class is on the div, not the list itself*/
+.languages{
+    border: 1px red solid;
+    padding: 10px;
+    /*This gives the box rounded edges*/
+    border-radius: 15px;
+
+}
+
+.languages h2{
+    text-align: center;
+}
+/*Reminder- ul is an unlinked list tag*/
+.languages ul{
+    padding: 0;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.languages li{
+    padding-bottom: 6px;
+    border: dotted 1px black;
+    list-style-image: url('../images/symbols.png');
+}
