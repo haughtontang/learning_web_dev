@@ -8,7 +8,7 @@
 body{
     /*Colours can be hex, rbg or text*/
     background-color:darkgray;
-    color:rgb(28, 54, 102);
+    color:rgb(24, 143, 223);
 
     /*It loads these in order of availability. Custome fonts can be used, but they must be downloaded and linked to*/
     font-family: Arial, Helvetica, sans-serif;
@@ -47,6 +47,22 @@ a:visited{
     /*puts even amount of spaces between everything*/
     /*Margins follow the box model in css*/
     margin: auto;
+}
+
+.button{
+    background-color: rgb(65, 64, 64);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.button:hover{
+    background-color: #333;
+    color: #fff;
+}
+
+.clr{
+    clear: both;
 }
 
 /*To target a class, use dot(.)*/
@@ -97,4 +113,105 @@ a:visited{
     padding-bottom: 6px;
     border: dotted 1px black;
     list-style-image: url('../images/symbols.png');
+}
+
+.my_form{
+    padding:20px;
+}
+
+.my_form.form_group{
+    padding-bottom: 15px;
+}
+
+.my_form label{
+    display: block;
+}
+
+.my_form input[type="text"], .my_form textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+/* .my_form input[type="submit"]{
+    background-color: rgb(65, 64, 64);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+} */
+
+.block{
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    /*A nice argument that takes into account width, border and padding and sizes the sections accordingly
+    A more advanced version of this is flex box*/
+    box-sizing: border-box;
+}
+
+#main_block{
+    float:left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float:right;
+    width: 30%;
+    background-color: lightgray;
+    color: black;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/*Possible positions in css: static, relative, absolute, fixed, initial, inherit 
+Every thing is static by default*/
+
+.p_box{
+    margin-top: 30px;
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+    background-image: url('../images/br.jpeg');
+    background-position: 100px 200px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.p_box h1{
+    position: absolute;
+    top: 40px;
+    left: 200px;
+}
+
+.p_box h2{
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+.fix_me{
+        /*Never moves*/
+    position: fixed;
+    top: 400px;
+}
+
+/*These are called pseudo classes*/
+.my_list li:first-child{
+    background: red;
+}
+
+.my_list li:last-child{
+    background: blue;
+}
+/*nth used to targeth specific elements*/
+.my_list li:nth-child(5){
+    background: green;
+}
+
+/*It can also be used to apply to many elements*/
+.my_list li:nth-child(even){
+    background: yellow;
 }
