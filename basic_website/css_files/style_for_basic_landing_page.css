@@ -8,18 +8,19 @@ body{
 }
 
 a.image_link{
-    background: rgb(54, 51, 51);
+    /* background: rgb(54, 51, 51); */
     display: inline-block;
   }
 
-a.image_link img{
+/* a.image_link img{
     vertical-align:  middle;
     transition: opacity 0.3s;
     -webkit-transition: opacity 0.3s;
-}
+}*/
 
 a.image_link:hover img{
     opacity: 0.5;
+    color: antiquewhite;
 }
 
 .container{
@@ -28,32 +29,59 @@ a.image_link:hover img{
     overflow: hidden;
 }
 
-.nav_bar_image {
-    float: left;
-    width:  100px;
-    height: 100px;
-    object-fit: contain;
-    margin: 10px;
-    padding: 0 10px 0 10px;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: rgb(13, 115, 173);
+    color: #fff;
+    font-weight: bold;
+    font-size: xx-large;
 }
 
-#main_header{
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_bar_image {
+    float: left;
+    width:  75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+
+
+/* #main_header{
     background-color: rgb(13, 115, 173);
     color: #fff;
     font-weight: bold;
     font-size: xx-large;
     border: 20px;
-}
+    justify-content: space-between;
+    align-items: center;
 
-#navbar ul{
+} */
+
+/* .main_menu ul{
     padding: 0;
     list-style: none;
-    text-align:center;
 }
 
-#navbar li{
+.main_menu li{
     display: inline-block;
-}
+} */
 
 .showcase_image {
     position: relative;
@@ -70,7 +98,50 @@ a.image_link:hover img{
     text-decoration: underline;
 }
 
+.form_title h1{
+    font-size: 30px;
+    text-decoration: underline;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
 #showcase h2{
     font-size: 27px;
     font-style: italic;
+}
+
+.my_form{
+    padding:20px;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.my_form.form_group{
+    padding-bottom: 15px;
+}
+
+.my_form label{
+    display: block;
+}
+
+.my_form input[type="text"], .my_form textarea{
+    padding: 8px;
+    width: 80%;
+}
+
+.button{
+    background-color: rgb(65, 64, 64);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.button:hover{
+    background-color: rgb(187, 179, 179);
+    color: rgb(17, 17, 16);
+    opacity: 50%;
 }
