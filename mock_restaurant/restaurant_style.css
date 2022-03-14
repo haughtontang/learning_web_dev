@@ -1,0 +1,38 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    background-color: rgba(231, 218, 175, 0.479);
+    color: rgb(26, 9, 9);
+    line-height: 1.6em;
+}
+
+.container{
+    width: 50%;
+    margin: auto;
+}
+
+#first_part{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu ul{
+    display: flex;
+    justify-content:center;
+}
+
+#r_header li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 60px;
+}
+
+#showcase_image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    object-fit: fill;
+}
