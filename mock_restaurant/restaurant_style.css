@@ -42,9 +42,49 @@ body{
     align-items: stretch;
     flex-direction: row;
     justify-content:space-between;
-    align-items: stretch;
 }
 
 .ingredient_description_container div{
-    padding: 20px 30px 0px 30px;
+    padding: 20px 30px 0px 0px;
+}
+
+.review_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.ingredient_review{
+    padding: 20px 30px 0px 0px;
+}
+
+.last_section{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.news h1{
+    font-size: 18px;
+} 
+
+.news p{
+    font-size: 14px;
+}
+
+.email{
+    flex-shrink: 1;
+}
+
+.email input[type="text"], .email textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+.button{
+    padding: 30px;
+}
+
+.button input[type="submit"]{
+    padding: 10px 30px;
+    font-size: 18px;
 }
