@@ -1,7 +1,7 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
-    background-color: rgba(231, 218, 175, 0.479);
+    background-color: rgba(240, 227, 214);
     color: rgb(26, 9, 9);
     line-height: 1.6em;
 }
@@ -23,10 +23,54 @@ body{
     justify-content:center;
 }
 
+#r_header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(240, 227, 214);
+    /* border-bottom: 1px solid black; */
+    -webkit-box-shadow: 6px 6px 16px 2px #000000; 
+    box-shadow: 6px 6px 16px 2px #000000;
+}
+
+#r_header h1{
+    margin-top: 25px;
+}
+
 #r_header li{
     list-style: none;
     display: inline-block;
     margin: 0 60px;
+    margin-bottom: 15px;
+}
+
+#r_header a{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(153, 72, 58);
+  }
+
+#r_header a:hover{
+    color: rgb(153, 72, 58);
+}
+
+#book_button{
+    color: rgba(240, 227, 214);
+    padding: 14px 40px;
+    font-size: 18px;
+    margin-top: 25px;
+    background-color: rgb(153, 72, 58);
+    /* border: 0; */
+}
+
+#book_button:hover,
+#book_button:focus,
+.button:hover,
+.button:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
 }
 
 #showcase_image{
@@ -59,32 +103,31 @@ body{
 }
 
 .last_section{
+    width: 80%;
+    margin: auto;
     display: flex;
     justify-content: space-evenly;
+    background-color: rgb(153, 72, 58);
 }
 
 .news h1{
-    font-size: 18px;
+    font-size: 24px;
 } 
 
 .news p{
     font-size: 14px;
 }
 
-.email{
-    flex-shrink: 1;
-}
-
-.email input[type="text"], .email textarea{
+#email_box input[type="text"], .email textarea{
     padding: 8px;
     width: 100%;
 }
 
-.button{
-    padding: 30px;
-}
-
-.button input[type="submit"]{
-    padding: 10px 30px;
+#send_button{
+    padding: 14px 30px;
     font-size: 18px;
+    margin-top: 25px;
+    background-color: rgb(153, 72, 58);
+    font-size: 18px;
+    color: rgba(240, 227, 214);
 }
