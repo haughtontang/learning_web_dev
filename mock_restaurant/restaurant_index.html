@@ -3,68 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Restaurant Name</title>
+    <title>Tang's Hot Pot (唐火锅)</title>
     <link rel="stylesheet" type="text/css" href="restaurant_style.css">
+    <link rel="icon" href="../images/pepper.png">
 </head>
 <body>
     <header id="r_header">
         <div id="first_part">
-            <h1>Restaurant name</h1>
+            <h1>Tang's Hot Pot (唐火锅)</h1>
             <input id="book_button" type="submit" value="BOOK" name="">
         </div>
         <nav id="menu">
-        <ul>
-            <li><a href="#">Part 1</a></li>
-            <li><a href="#">Part 2</a></li>
-            <li><a href="#">Part 3</a></li>
-        </ul>
+            <ul>
+                <li><a href="#">Broth</a></li>
+                <li><a href="#">Meat</a></li>
+                <li><a href="#">Vegetables</a></li>
+            </ul>
         </nav>
     </header>
 
     <div id="showcase_image">
-        <img src="../images/hotpot.jpeg" alt="">
+        <img src="../images/cq.jpeg" alt="", class="highlight_img">
     </div>
 
     <div class="container">
         <div class="ingredient_description_container">
             <div class="ingredient_descriptions_1">
-                <h2>Some Info 1</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima quaerat sit nihil quo accusamus non sed unde debitis officia corporis.</p>
+                <h2>Broth</h2>
+                <p>We import our broth from our local partners in Chongqing, China, to ensure that the taste is as authentic as possible.</p>
             </div>
             <div class="ingredient_descriptions_2">
-                <h2>Some Info 2</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima quaerat sit nihil quo accusamus non sed unde debitis officia corporis.</p>
+                <h2>Meat</h2>
+                <p>Local grass-fed beef. Free-range chickens. Fish captured using sustainable practices.</p>
             </div>
             <div class="ingredient_descriptions_3">
-                <h2>Some Info 3</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima quaerat sit nihil quo accusamus non sed unde debitis officia corporis.</p>
+                <h2>Vegetables</h2>
+                <p>To reduce our strain on the environment, all vegetables, where possible, are grown in the UK.</p>
             </div>
         </div>
         
         <div class="review_container">
             <div class="ingredient_review">
-                <h2>Sub heading</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt pariatur reiciendis ad dignissimos culpa modi distinctio accusamus soluta veniam eveniet asperiores ratione voluptatum eaque, iure necessitatibus, a vel veritatis tenetur architecto inventore provident? Cum blanditiis dolores, nemo est rem sequi!</p>
+                <h2>Our Vision</h2>
+                <p>Located in the South-West of China, Chongqing was previously part of the Sichuan province, a region known for its spicy food.
+                     The most famous of which is hot pot. We aim to deliver the same high-quality experience and authentic flavours in an approachable way.</p>
             </div>
             <div class="ingredient_review">
-                <h2>Sub heading</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt pariatur reiciendis ad dignissimos culpa modi distinctio accusamus soluta veniam eveniet asperiores ratione voluptatum eaque, iure necessitatibus, a vel veritatis tenetur architecto inventore provident? Cum blanditiis dolores, nemo est rem sequi!</p>
+                <h2>Our Accolades</h2>
+                <p>Featured on BBC One's Master Chef as a location for contestants to get experience in a production kitchen.
+                     Listed in the London Times' top 10 'Must See' restaurants in London.</p>
             </div>
         </div>
         <br>
     </div>
-    <div class="last_section">
-        <div class="news">
-            <h1>Newsletter Sign-up</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nesciunt ratione fugit est molestiae deserunt?</p>
+    <div class="footer_block">
+        <div class="last_section">
+            <div class="news">
+                <h1>Join the Newsletter</h1>
+                <p>Leave your email if you're interested in receiving updates from us on our newest menu items and seasonal ingredients.</p>
+            </div>
+            <div class="email">
+                <label>Email:</label>
+                <input id="email_box" type="text" name="email">
+            </div>
+            <div class="button">
+                <input id="send_button" type="submit" value="Send" name="">
+            </div>
         </div>
-        <div class="email">
-            <label>Email:</label>
-            <input id="email_box"type="text" name="email">
-        </div>
-        <div class="button">
-            <input id="send_button" type="submit" value="Send" name="">
-        </div>
-    </div>
+    </div>  
 </body>
 </html>

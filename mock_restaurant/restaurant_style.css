@@ -73,12 +73,11 @@ a:visited {
   transform: translateY(-0.25em);
 }
 
-#showcase_image{
+.highlight_img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    object-fit: fill;
 }
 
 .ingredient_description_container{
@@ -102,12 +101,20 @@ a:visited {
     padding: 20px 30px 0px 0px;
 }
 
+.ingredient_review h2{
+    text-align: center;
+}
+
+.footer_block{
+    width: 100%;
+    background-color: rgb(153, 72, 58);
+}
+
 .last_section{
-    width: 80%;
+    width: 50%;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(153, 72, 58);
 }
 
 .news h1{
@@ -118,16 +125,21 @@ a:visited {
     font-size: 14px;
 }
 
+#email_box{
+    min-width:200px;
+}
+
 #email_box input[type="text"], .email textarea{
     padding: 8px;
     width: 100%;
+    
 }
 
 #send_button{
-    padding: 14px 30px;
+    padding: 11px 30px;
     font-size: 18px;
     margin-top: 25px;
-    background-color: rgb(153, 72, 58);
+    color: rgb(153, 72, 58);
     font-size: 18px;
-    color: rgba(240, 227, 214);
+    background-color: black;
 }
