@@ -26,6 +26,10 @@ margin: 5px 0;
     margin: auto;
 }
 
+.msg{
+    padding: 15px;
+}
+
 #my_form{
     background-color: #ccc;
     margin: auto;
