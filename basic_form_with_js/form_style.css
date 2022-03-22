@@ -77,3 +77,20 @@ background: #444;
     padding: 5px;
     margin: 5px;
 }
+
+.blue {
+    background: blue;
+    color: rgb(235, 231, 14);
+}
+
+.green{
+    background: green;
+    color: orange;
+}
+
+.purple{
+    background: purple;
+    color: green;
+}
+
+
